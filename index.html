@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexaCore Tech</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="logo" onclick="showPage('home')">Nexa<span>Core</span></div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')" id="nav-home" class="active">Home</a></li>
+    <li><a onclick="showPage('services')" id="nav-services">Serviços</a></li>
+    <li><a>Sobre</a></li>
+    <li><a>Contato</a></li>
+  </ul>
+  <button class="nav-cta" onclick="showPage('services')">Fale Conosco →</button>
+</nav>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+  <section class="hero">
+    <div>
+      <div class="badge">Inovação em Tecnologia</div>
+      <h1>Transformamos ideias em <span class="gradient">soluções digitais</span> de alto impacto</h1>
+      <p>A NexaCore desenvolve software sob medida, aplicativos móveis e infraestrutura em nuvem para empresas que querem crescer com tecnologia de ponta.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="showPage('services')">Conheça nossos serviços</button>
+        <button class="btn-outline">Ver cases de sucesso</button>
+      </div>
+      <div class="hero-stats">
+        <div><div class="stat-num">120+</div><div class="stat-label">Projetos entregues</div></div>
+        <div><div class="stat-num">98%</div><div class="stat-label">Satisfação dos clientes</div></div>
+        <div><div class="stat-num">8 anos</div><div class="stat-label">No mercado</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-highlight">
+    <div class="section-tag">O que fazemos</div>
+    <div class="section-header-row">
+      <div>
+        <h2 class="section-title">Soluções que <span class="gradient">impulsionam</span> seu negócio</h2>
+        <p class="section-sub">Do conceito ao deploy, cuidamos de toda a jornada tecnológica da sua empresa.</p>
+      </div>
+      <button class="btn-outline" onclick="showPage('services')">Ver todos →</button>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="card-icon">🌐</div>
+        <h3>Desenvolvimento Web</h3>
+        <p>Sites, sistemas e plataformas web responsivos com as tecnologias mais modernas do mercado.</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">📱</div>
+        <h3>Aplicativos Mobile</h3>
+        <p>Apps nativos e híbridos para iOS e Android com experiência de usuário excepcional.</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon">☁️</div>
+        <h3>Cloud / DevOps</h3>
+        <p>Infraestrutura escalável na nuvem com pipelines de CI/CD e monitoramento contínuo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="about-inner">
+      <div class="about-visual">
+        <div class="code-line"><span class="ln">01</span><span><span class="kw">const</span> <span class="fn">nexacore</span> = {</span></div>
+        <div class="code-line"><span class="ln">02</span><span>&nbsp;&nbsp;missao: <span class="str">"Inovar com propósito"</span>,</span></div>
+        <div class="code-line"><span class="ln">03</span><span>&nbsp;&nbsp;stack: [<span class="str">"React"</span>, <span class="str">"Node"</span>, <span class="str">"AWS"</span>],</span></div>
+        <div class="code-line"><span class="ln">04</span><span>&nbsp;&nbsp;clientes: <span class="fn">120+</span>,</span></div>
+        <div class="code-line"><span class="ln">05</span><span>&nbsp;&nbsp;satisfacao: <span class="str">"98%"</span>,</span></div>
+        <div class="code-line"><span class="ln">06</span><span>&nbsp;&nbsp;<span class="fn">entregar</span>: () =&gt; <span class="str">"sempre no prazo"</span></span></div>
+        <div class="code-line"><span class="ln">07</span><span>};</span></div>
+      </div>
+      <div class="about-text">
+        <div class="section-tag">Sobre a NexaCore</div>
+        <h2 class="section-title">Tecnologia com estratégia e propósito</h2>
+        <p>Somos uma software house especializada em transformar desafios de negócio em produtos digitais robustos e escaláveis.</p>
+        <p>Nossa equipe multidisciplinar combina engenharia de alta performance, design centrado no usuário e arquitetura cloud-first para entregar resultados reais.</p>
+        <div class="pills">
+          <span class="pill">React & Next.js</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">React Native</span>
+          <span class="pill">AWS / GCP</span>
+          <span class="pill">Docker & K8s</span>
+          <span class="pill">PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>Pronto para escalar seu produto digital?</h2>
+    <p>Converse com nossos especialistas e descubra como podemos transformar sua ideia em realidade.</p>
+    <button class="btn-primary" onclick="showPage('services')">Solicitar proposta gratuita →</button>
+  </div>
+
+  <footer>
+    <div class="logo" onclick="showPage('home')">Nexa<span>Core</span></div>
+    <p>© 2025 NexaCore Tech. Todos os direitos reservados.</p>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('services')">Serviços</a>
+      <a>Contato</a>
+    </div>
+  </footer>
+</div>
+
+<!-- SERVIÇOS -->
+<div id="page-services" class="page">
+  <section class="services-hero">
+    <div class="badge">Nossos serviços</div>
+    <h1>Soluções completas para <span class="gradient">cada etapa</span> do seu projeto</h1>
+    <p>Da concepção ao lançamento, a NexaCore oferece expertise técnica especializada para cada fase do desenvolvimento.</p>
+  </section>
+
+  <section class="services-full">
+    <div class="section-tag" style="text-align:center">Especialidades</div>
+    <h2 class="section-title" style="text-align:center;max-width:600px;margin:0 auto 1rem">O que a NexaCore entrega</h2>
+    <p class="section-sub" style="text-align:center;margin:0 auto">Cada serviço desenvolvido com foco em qualidade, escalabilidade e resultado.</p>
+    <div class="services-full-grid">
+      <div class="service-full-card">
+        <div class="card-icon">🌐</div>
+        <h3>Desenvolvimento Web</h3>
+        <p>Criamos aplicações web de alta performance — desde landing pages até sistemas SaaS complexos com arquitetura escalável.</p>
+        <div class="tag-list">
+          <span class="tag">React</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">APIs REST</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+      </div>
+      <div class="service-full-card">
+        <div class="card-icon">📱</div>
+        <h3>Aplicativos Mobile</h3>
+        <p>Apps nativos e híbridos para iOS e Android, com foco em performance, UX intuitiva e integração com backends.</p>
+        <div class="tag-list">
+          <span class="tag purple">React Native</span>
+          <span class="tag purple">Flutter</span>
+          <span class="tag purple">iOS & Android</span>
+          <span class="tag purple">Push Notifications</span>
+        </div>
+      </div>
+      <div class="service-full-card">
+        <div class="card-icon">☁️</div>
+        <h3>Cloud / DevOps</h3>
+        <p>Infraestrutura cloud com alta disponibilidade, segurança de dados e pipelines automatizados para entrega contínua.</p>
+        <div class="tag-list">
+          <span class="tag">AWS</span>
+          <span class="tag">GCP</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Kubernetes</span>
+          <span class="tag">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process-section">
+    <div class="section-tag" style="text-align:center">Como trabalhamos</div>
+    <h2 class="section-title" style="text-align:center;max-width:500px;margin:0 auto 3rem">Nosso processo de desenvolvimento</h2>
+    <div class="process-grid">
+      <div class="process-card">
+        <div class="process-icon">🔍</div>
+        <div class="process-num">01</div>
+        <h4>Descoberta</h4>
+        <p>Entendemos seu negócio, objetivos e desafios técnicos.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-icon">🎨</div>
+        <div class="process-num">02</div>
+        <h4>Design & Prototipagem</h4>
+        <p>Wireframes e protótipos validados com stakeholders.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-icon">⚙️</div>
+        <div class="process-num">03</div>
+        <h4>Desenvolvimento</h4>
+        <p>Sprints ágeis com entregas incrementais e código revisado.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-icon">🚀</div>
+        <div class="process-num">04</div>
+        <h4>Deploy & Suporte</h4>
+        <p>Publicação, monitoramento e suporte contínuo.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-banner">
+    <h2>Vamos construir algo incrível juntos?</h2>
+    <p>Entre em contato e receba uma proposta personalizada para o seu projeto.</p>
+    <button class="btn-primary">Solicitar proposta gratuita →</button>
+  </div>
+
+  <footer>
+    <div class="logo" onclick="showPage('home')">Nexa<span>Core</span></div>
+    <p>© 2025 NexaCore Tech. Todos os direitos reservados.</p>
+    <div class="footer-links">
+      <a onclick="showPage('home')">Home</a>
+      <a onclick="showPage('services')">Serviços</a>
+      <a>Contato</a>
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
